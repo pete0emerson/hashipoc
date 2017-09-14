@@ -16,7 +16,7 @@ job "helloworld" {
       }
       config {
         command = "/usr/bin/python"
-        args = ["/usr/local/bin/app.py", "v3"]
+        args = ["/usr/local/bin/app.py", "v1"]
       }
       resources {
         cpu = 100
