@@ -15,11 +15,20 @@ Bring the vagrant instance up.
 vagrant up
 ```
 
-At the end of the provisioning two instances of the python application will be running via nomad behind haproxy. SSH into the vagrant instance and run a while loop curling localhost:
+At the end of the provisioning two instances of the python application will be running via nomad behind haproxy. Since port 80 is mapped locally
+at port 8080, you can curl the application locally:
+
+```
+while [ 1 ] ; do curl http://localhost:8080 ; sleep 1 ; done
+```
+
+Alternatively, you can  SSH into the vagrant instance and run the while loop there:
 
 ```
 vagrant ssh -c 'while [ 1 ] ; do curl http://localhost ; sleep 1 ; done'
 ```
+
+Also installed is a [UI](https://github.com/jippi/hashi-ui) for viewing and manipulating consul and nomad. Point your browser at http://localhost:3000
 
 # Under the hood
 
@@ -30,7 +39,7 @@ installs a pip requirements file.
 
 `haproxy.sh` installs haproxy.
 
-`consul.sh`, `haproxy.sh`, `vault.sh`, and `nomad.sh` install those four packages with supervisor config files to manage their processes. Some vault token generation, policy generation, and secret creation also happens in `vault.sh`.
+`consul.sh`, `haproxy.sh`, `vault.sh`, `nomad.sh`, and `hashi-ui.sh` install those five packages with supervisor config files to manage their processes. Some vault token generation, policy generation, and secret creation also happens in `vault.sh`.
 
 `consul-template.sh` installs consul-template, which monitors service changes in consul and reconfigures and reloads haproxy accordingly.
 
