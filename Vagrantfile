@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "xenial"
+  config.vm.box = "ubuntu/xenial64"
 
   config.vm.synced_folder "files", "/vagrant"
 
