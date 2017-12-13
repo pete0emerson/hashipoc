@@ -52,3 +52,5 @@ DNS to do service discovery.
 
 The nomad deployment (`files/helloworld.nomad` locally, `/vagrant/helloworld.nomad` on the vagrant instance) is configured to do a
 blue/green style release. Inside this file, change `"v1"` to `"v2"` on line 19. Keep a while loop curling localhost going in another window. Then execute `nomad run /vagrant/helloworld.nomad` on the vagrant instance. You'll see four instances of the application running instead of two (two of which will print out `v2`). If you execute a `nomad deployment list` and grab the deployment id, you can promote it with `nomad deployment promote <ID>`. The old instances will go away, leaving the `v2` instances in place.
+
+# Banana banana
