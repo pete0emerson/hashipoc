@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HASHI_UI_VERSION=0.18.0
+HASHI_UI_VERSION=0.23.0
 HASHI_UI_ARCH=linux-amd64
 
 echo "Getting hashi-ui binary"

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DEBIAN_FRONTEND=noninteractive
+
 echo "Installing dnsmasq"
 apt-get install -y -q dnsmasq
 cp /vagrant/dnsmasq.conf /etc/dnsmasq.conf

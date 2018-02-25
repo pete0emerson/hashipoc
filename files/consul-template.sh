@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONSUL_TEMPLATE_VERSION=0.19.2
+CONSUL_TEMPLATE_VERSION=0.19.4
 CONSUL_TEMPLATE_ARCH=linux_amd64
 
 echo "Getting consul-template binary"

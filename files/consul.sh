@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONSUL_VERSION=0.9.2
+CONSUL_VERSION=1.0.6
 CONSUL_ARCH=linux_amd64
 
 echo "Getting consul binary"

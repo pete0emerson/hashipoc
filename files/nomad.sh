@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NOMAD_VERSION=0.6.2
+NOMAD_VERSION=0.7.1
 NOMAD_ARCH=linux_amd64
 
 echo "Getting nomad binary"
