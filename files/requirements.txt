@@ -5,7 +5,7 @@ Flask==0.12.2
 hvac==0.2.17
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 MarkupSafe==1.0
 meld3==1.0.2
 requests==2.18.4
