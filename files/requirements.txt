@@ -9,6 +9,6 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 meld3==1.0.2
 requests==2.18.4
-supervisor==3.2.0
+supervisor==3.2.4
 urllib3==1.22
 Werkzeug==0.12.2
